@@ -3,6 +3,7 @@
 > :cl: generate-resume
 
 - 样式待调整
+- 模板内容待调整
 
 ~~based on json-resume~~
 
