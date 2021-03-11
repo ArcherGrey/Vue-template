@@ -2,6 +2,8 @@
 
 > :cl: generate-resume
 
+- 样式待调整
+
 ~~based on json-resume~~
 
 ## 依赖
