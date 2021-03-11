@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const Koa = require("koa");
+const resume = require("../resume");
+
+const jsonToHtml = require("../lib/jsonToHtml");
+const app = new Koa();
+
+app.use(async ctx => {
+  ctx.body = jsonToHtml(resume);
+});
+
+app.listen(3000);
+
+console.log("success listen on 3000");

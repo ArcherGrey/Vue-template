@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+const pdf = require("html-pdf");
+const jsonToHtml = require("../lib/jsonToHtml");
+const resume = require("../resume");
+
+const htmlResume = jsonToHtml(resume);
+
+pdf
+  .create(htmlResume, {
+    // A4 size? what is that?
+    width: "297mm",
+    height: "400mm",
+    format: "A4"
+  })
+  .toFile("test.pdf", function (err, res) {
+    if (err) return console.log(err);
+    console.log(res); // { filename: '/app/businesscard.pdf' }
+  });
