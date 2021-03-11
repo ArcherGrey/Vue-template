@@ -1,10 +1,10 @@
 {
-  "name": "@greengrey/gr-cli",
+  "name": "buildresume-cli",
   "version": "1.0.0",
   "description": "generate resume based on json resume",
   "main": "index.js",
   "repository": "git@github.com:ArcherGrey/gr-cli.git",
-  "author": "guorui <guorui@mlogcn.com>",
+  "author": "ArcherGrey <498792539@qq.com>",
   "license": "MIT",
   "keywords": [
     "cli",
@@ -12,9 +12,9 @@
     "resume"
   ],
   "bin": {
-    "gr": "./bin/gr",
-    "gr-pdf": "./bin/gr-pdf",
-    "gr-serve": "./bin/gr-serve"
+    "buildresume": "./bin/buildresume",
+    "buildresume-pdf": "./bin/buildresume-pdf",
+    "buildresume-serve": "./bin/buildresume-serve"
   },
   "dependencies": {
     "handlebars": "^4.7.7",
